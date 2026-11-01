@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePulse - Patient Visit Summary Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navbar">
+            <div class="logo-text">CarePulse Health</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Summary.html">Visit Summary</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="SignUpPage.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <div class="card" style="text-align: center;">
+            <img src="https://via.placeholder.com/800x120/17a2b8/ffffff?text=Click+Right+Side+To+Learn+About+Us"
+                usemap="#summarymap" alt="Hospital Header Banner" style="max-width: 100%; border-radius: 4px;">
+            <map name="summarymap">
+                <area shape="rect" coords="400,0,800,120" href="about.html" alt="About Us" title="Go to About Us">
+            </map>
+        </div>
+
+        <section class="card">
+            <h2 class="section-title">Patient Visit History & Clinical Summaries</h2>
+            <p>Below is a log of recent outpatient clinic visits and prescribed treatment plans.</p>
+
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Visit ID</th>
+                        <th>Date</th>
+                        <th>Attending Physician</th>
+                        <th>Primary Diagnosis</th>
+                        <th>Prescribed Treatment</th>
+                        <th>Follow-up Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#VS-8821</td>
+                        <td>2026-10-12</td>
+                        <td>Dr. Ahmed Al-Mansoor</td>
+                        <td>Acute Bronchitis</td>
+                        <td>Amoxicillin 500mg, Rest, Hydration</td>
+                        <td>2026-10-26</td>
+                    </tr>
+                    <tr>
+                        <td>#VS-7904</td>
+                        <td>2026-09-05</td>
+                        <td>Dr. Sarah Al-Otaibi</td>
+                        <td>Essential Hypertension</td>
+                        <td>Lisinopril 10mg daily, Low sodium diet</td>
+                        <td>2026-11-05</td>
+                    </tr>
+                    <tr>
+                        <td>#VS-6520</td>
+                        <td>2026-06-18</td>
+                        <td>Dr. Tariq Hassan</td>
+                        <td>Routine Physical Checkup</td>
+                        <td>Multivitamins, Yearly Screening</td>
+                        <td>2027-06-18</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePulse Hospital System</p>
+    </footer>
+
+</body>
+
+</html>

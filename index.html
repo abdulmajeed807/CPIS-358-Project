@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarePulse - Patient Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .hero-banner {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 25px;
+            border: 1px solid #dee2e6;
+            border-left: 6px solid #0056b3;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .quick-nav-box {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            border: 1px solid #dee2e6;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .hero-banner a.btn-submit {
+            background-color: #0056b3;
+            color: #ffffff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .hero-banner a.btn-submit:hover {
+            background-color: #004085;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navbar">
+            <div class="logo-text">CarePulse Health</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Summary.html">Visit Summary</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="SignUpPage.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="emergency-badge">
+        Emergency Hotline: 937
+    </div>
+
+    <main class="container">
+
+        <section class="hero-banner">
+            <h1>Welcome to your Dashboard</h1>
+            <p>Review your recent outpatient discharge instructions, active medications, and upcoming follow-ups.</p>
+
+            <div style="margin-top: 20px;">
+                <a href="Summary.html" class="btn-submit">
+                    View Visit Summary for <span id="patient-name">Mohammed Ali</span> (MRN: <span
+                        id="patient-mrn">8821</span>)
+                </a>
+            </div>
+        </section>
+
+        <section class="card">
+            <h2 class="section-title">Interactive Navigation Banner</h2>
+            <p>Click on the designated area of the hospital portal graphic below to jump to our About Us information
+                page.</p>
+            <div style="text-align: center; margin-top: 15px;">
+                <img src="https://via.placeholder.com/800x200/0056b3/ffffff?text=CarePulse+Portal+-+Click+Left+Side+For+About+Us"
+                    usemap="#portalmap" alt="Hospital Visit Portal Banner"
+                    style="max-width: 100%; height: auto; border-radius: 6px;">
+
+                <map name="portalmap">
+                    <area shape="rect" coords="0,0,400,200" href="about.html" alt="About Us Page"
+                        title="Click to go to About Us">
+                </map>
+            </div>
+        </section>
+
+        <section class="quick-nav-box">
+            <h3>Quick Jump Links:</h3>
+            <ul>
+                <li><a href="#active-medications">Jump to Active Prescriptions</a></li>
+                <li><a href="#discharge-instructions">Jump to Discharge Instructions</a></li>
+            </ul>
+        </section>
+
+        <article id="active-medications" class="card">
+            <h2 class="section-title">Active Prescriptions</h2>
+            <p>Your current prescribed medications from your recent visit:</p>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li><strong>Amoxicillin 500mg:</strong> Take one capsule every 8 hours for 7 days.</li>
+                <li><strong>Ibuprofen 400mg:</strong> Take one tablet every 6 hours as needed for pain.</li>
+                <li><strong>Lisinopril 10mg:</strong> Take one tablet daily in the morning.</li>
+            </ul>
+        </article>
+
+        <article id="discharge-instructions" class="card">
+            <h2 class="section-title">Discharge Instructions</h2>
+            <p>Please follow these steps for your post-visit recovery:</p>
+            <ol style="margin-left: 20px; margin-top: 10px;">
+                <li>Rest and maintain hydration for the next 48 hours.</li>
+                <li>Schedule your follow-up bloodwork before your next appointment.</li>
+                <li>Return to the clinic on 2026-10-26 for your follow-up with Dr. Ahmed.</li>
+            </ol>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePulse Hospital System</p>
+    </footer>
+
+</body>
+
+</html>
