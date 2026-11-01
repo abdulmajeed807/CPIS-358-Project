@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - CarePulse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navbar">
+            <div class="logo-text">CarePulse Health</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Summary.html">Visit Summary</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="SignUpPage.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card" style="max-width: 600px; margin: 40px auto;">
+            <h2 class="section-title">Create a Doctor Account</h2>
+            <p>Register to manage your Patients.</p>
+
+            <form action="login.html" method="get" style="margin-top: 20px;">
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" class="form-control" required
+                        placeholder="Mohammed Ali">
+                </div>
+
+                <div class="form-group">
+                    <label for="regEmail">Email Address:</label>
+                    <input type="email" id="regEmail" name="regEmail" class="form-control" required
+                        placeholder="name@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="regPassword">Create Password:</label>
+                    <input type="password" id="regPassword" name="regPassword" class="form-control" required
+                        placeholder="Minimum 8 characters">
+                </div>
+
+                <button type="submit" class="btn-submit" style="width: 100%; margin-top: 10px;">Register
+                    Account</button>
+
+                <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">
+                    Already have an account? <a href="DoctorLogin.html" style="color: #0056b3; font-weight: bold;">Log in
+                        here</a>.
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePulse Hospital System</p>
+    </footer>
+
+</body>
+
+</html>

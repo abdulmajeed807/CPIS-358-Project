@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CarePulse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navbar">
+            <div class="logo-text">CarePulse Health</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Summary.html">Visit Summary</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="SignUpPage.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card" style="max-width: 500px; margin: 40px auto;">
+            <h2 class="section-title">Patient Login</h2>
+            <p>Access your medical records and visit summaries securely.</p>
+
+            <form action="index.html" method="get" style="margin-top: 20px;">
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" class="form-control" required
+                        placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="form-control" required
+                        placeholder="Enter your password">
+                </div>
+
+                <button type="submit" class="btn-submit" style="width: 100%; margin-top: 10px;">Secure Login</button>
+
+                <p style="text-align: center; margin-top: 20px; font-size: 0.9rem;">
+                    Don't have an account? <a href="PatientSignup.html" style="color: #0056b3; font-weight: bold;">Sign up
+                        here</a>.
+		</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePulse Hospital System</p>
+    </footer>
+
+</body>
+
+</html>

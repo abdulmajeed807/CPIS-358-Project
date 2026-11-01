@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CarePulse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-navbar">
+            <div class="logo-text">CarePulse Health</div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Summary.html">Visit Summary</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="SignUpPage.html">Login / Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="card" style="max-width: 800px; margin: auto;">
+            <h2 class="section-title">Inquiries & Record Request</h2>
+            <p>If you have any questions about your visit or need to request official medical records, please fill out
+                the form below.</p>
+
+            <form action="#" method="get" style="margin-top: 20px;">
+                <div class="form-group">
+                    <label for="formPatientName">Full Name:</label>
+                    <input type="text" id="formPatientName" name="patientName" class="form-control" required
+                        placeholder="Enter full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="formMrnNumber">Medical Record Number (MRN):</label>
+                    <input type="text" id="formMrnNumber" name="mrnNumber" class="form-control" required
+                        placeholder="e.g., MRN-109283">
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Select Department:</label>
+                    <select id="department" name="department" class="form-control">
+                        <option value="general">General Medicine</option>
+                        <option value="cardiology">Cardiology</option>
+                        <option value="orthopedics">Orthopedics</option>
+                        <option value="pediatrics">Pediatrics</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Inquiry Details:</label>
+                    <textarea id="comments" name="comments" rows="5" class="form-control"
+                        placeholder="Describe your request in detail..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Request</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 CarePulse Hospital System</p>
+    </footer>
+
+</body>
+
+</html>
