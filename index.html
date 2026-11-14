@@ -127,11 +127,40 @@
         </article>
 
     </main>
-
-    <footer>
+<footer>
         <p>&copy; 2026 CarePulse Hospital System</p>
     </footer>
+    <script src="script.js"></script>
+    <script>
+        const heading = document.querySelector('.hero-banner h1');
+        const hour = new Date().getHours();
+        if (hour < 12) {
+            heading.innerText = "Good Morning, Welcome to your Dashboard";
+        } else if (hour < 18) {
+            heading.innerText = "Good Afternoon, Welcome to your Dashboard";
+        } else {
+            heading.innerText = "Good Evening, Welcome to your Dashboard";
+        }
 
+
+        let isDefaultBanner = true;
+        function toggleBanner() {
+            const bannerImg = document.querySelector('img[usemap="#portalmap"]');
+            const statusText = document.getElementById('banner-status');
+
+            if (isDefaultBanner) {
+                bannerImg.src = "https://via.placeholder.com/800x200/17a2b8/ffffff?text=24/7+Outpatient+Support+-+Click+Left+For+About+Us";
+                statusText.innerText = "Showing: Outpatient Support Banner";
+                statusText.style.color = "#17a2b8";
+            } else {
+                bannerImg.src = "https://via.placeholder.com/800x200/0056b3/ffffff?text=CarePulse+Portal+-+Click+Left+Side+For+About+Us";
+                statusText.innerText = "Showing: Main Portal Banner";
+                statusText.style.color = "#0056b3";
+            }
+            isDefaultBanner = !isDefaultBanner;
+        }
+    </script>
+<script src="script.js"></script>
 </body>
 
 </html>
